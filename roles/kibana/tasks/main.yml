@@ -22,8 +22,8 @@
 
 - name: Create nginx.conf file
   template:
-    src: nginx.conf.j2
-    dest: /etc/nginx/conf.d/kibana.conf
+    src: elk.conf.j2
+    dest: /etc/nginx/conf.d/elk.conf
   notify: Restart Nginx
 
 
